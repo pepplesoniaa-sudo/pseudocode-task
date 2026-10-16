@@ -127,3 +127,17 @@ Done: gave the Explorer check list and the reminder of work still owed by the ow
 13  C4 recording + listener                       Not started        -
 14  Final README + post outline + checklist       Not started        -
 15  Housekeeping files (.gitignore, evidence, standard, audit)  Verified   created this run
+
+--------------------------------------------------------------------------------
+
+### Entry 11 - STEP 6 commit (housekeeping)
+Done: staged and committed ONLY the step 2-3 files. Exactly one git add and one git commit, as allowed.
+Command run: git add PROGRESS-LOG.md .gitignore evidence PSEUDOCODE-STANDARD.md FINAL-AUDIT.md
+Command run: git commit -m "Add housekeeping files and catch up progress log"
+Evidence (CONFIRMED by read-only git):
+- Commit a0b0b56, 5 files changed, 109 insertions.
+  Files: .gitignore, FINAL-AUDIT.md, PSEUDOCODE-STANDARD.md, PROGRESS-LOG.md, evidence/README.md.
+- Author/email: Sonia Pepple [pepplesoniaa@gmail.com] - same as root commit 5e5beb4.
+- No git push was run. "git add ." was NOT used.
+Note: this Entry 11 was appended AFTER the commit, so PROGRESS-LOG.md now carries one uncommitted
+change (the entry you are reading). Expected; it will go into the next housekeeping commit.
