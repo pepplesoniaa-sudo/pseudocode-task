@@ -71,3 +71,59 @@ Evidence (CONFIRMED): tool output showing line 1 and line 14 verbatim.
 12  C3 ten-input comparison                       Not started        -
 13  C4 recording + listener                       Not started        -
 14  Final README + post outline + checklist       Not started        -
+
+--------------------------------------------------------------------------------
+
+## 2026-10-16 21:37+ - Housekeeping run (this message)
+
+### Entry 5 - STEP 2 result recorded (line 14)
+Done: printed src\adminRoutes.ts line 14. Result: line 14 passes NO encoding to digest - CONFIRMED by
+the empty brackets in ".digest()". Nothing else about the function was described.
+Evidence (CONFIRMED): tool output of line 14 verbatim.
+
+### Entry 6 - git init and root commit (owner ran it)
+Done (owner action): repository initialised at C:\dev\pseudocode-task and a root commit made.
+Evidence (CONFIRMED by read-only git):
+- Root commit 5e5beb4 "Record progress so far", 17 files changed, 196 insertions.
+- Branch master; working tree clean before housekeeping.
+
+### Entry 7 - author email check still pending
+Status: Not completed yet. The commit author email was read (owner asked to check it). The owner must
+say whether it looks wrong. The tutor will NOT change git config.
+
+### Entry 8 - open Explorer question
+Status: Not completed yet. Open question: confirm the editor (Antigravity) has C:\dev\pseudocode-task
+open as the workspace folder.
+
+### Entry 9 - housekeeping files created (STEP 3)
+Files created (CONFIRMED by listing):
+- .gitignore
+- evidence\README.md
+- PSEUDOCODE-STANDARD.md
+- FINAL-AUDIT.md
+
+### Entry 10 - STEP 4 / STEP 5 given
+Done: gave the Explorer check list and the reminder of work still owed by the owner.
+
+--------------------------------------------------------------------------------
+
+## CURRENT CHECKLIST (updated)
+ #  Item                                        Status             Evidence
+ 5  A1 own functions (3)                        In progress        1 of 3 started
+ 5a  - tokenMatches: lines shown                  Verified           lines 12-36 and 1,14 printed
+ 5b  - tokenMatches: notes + reasoning filed      Verified           two timestamped files
+ 5c  - tokenMatches: my conclusion on line 4      In progress        awaiting owner text
+ 5d  - tokenMatches: v1 draft written             Not started        -
+ 5e  - tokenMatches: hint review                  Not started        -
+ 5f  - tokenMatches: 3 traces + real run          Not started        -
+ 5g  - other two own functions                    Not started        -
+ 6  A2 library functions                          Not started        -
+ 7  A3 planted bug                                Not started        -
+ 8  B1 spec + 5 traces                            Not started        -
+ 9  B2 implementation                             Not started        -
+10  C1 AI instruction                             Not started        -
+11  C2 reverse-engineered pseudocode              Not started        -
+12  C3 ten-input comparison                       Not started        -
+13  C4 recording + listener                       Not started        -
+14  Final README + post outline + checklist       Not started        -
+15  Housekeeping files (.gitignore, evidence, standard, audit)  Verified   created this run
