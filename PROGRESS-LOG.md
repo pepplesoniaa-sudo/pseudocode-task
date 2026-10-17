@@ -270,3 +270,116 @@ the owner's STEP 2 answer and their v2-conclusion message.
 - STEP 3 (7 hint questions on v1) ...... Not started yet / blocked on owner's v2-conclusion message
 - 5f tokenMatches 3 traces + real run .. Not started
 - Nice to have: nothing new this run. Block on: owner's v2 conclusion + STEP 2 answer.
+
+--------------------------------------------------------------------------------
+
+## 2026-10-17 01:56 +01:00 - Stage A1 STEP 0 integrity report + STEP 3 gate check
+
+Permissions this run: read-only on the Background jobs project src; write ONLY to append to this log;
+NO git writes.
+
+### Entry 21 - git status and real listing
+Commands (read only): git status -sb ; git status ; git log --oneline -6 ; real folder listing.
+Evidence (CONFIRMED):
+- HEAD is db94fda "Append log entries 18 to 20". Branch master is ahead of origin/master by 1.
+- PROGRESS-LOG.md is CLEAN vs HEAD (it was committed in db94fda; the porcelain check was empty).
+- Working tree, not staged: modified part-a/own-functions/tokenMatches-reasoning.md ;
+  modified part-a/own-functions/tokenMatches.md.
+Listing (CONFIRMED):
+- tokenMatches-conclusion.md ... 2641 bytes, 10/17/2026 1:10:57 AM
+- tokenMatches-notes.md ........ 2412 bytes, 10/17/2026 1:55:53 AM
+- tokenMatches-reasoning.md .... 1020 bytes, 10/17/2026 1:33:50 AM
+- tokenMatches.md .............. 1541 bytes, 10/17/2026 1:33:54 AM
+
+### Entry 22 - which of the four files differ from HEAD
+Evidence (CONFIRMED by git diff --name-status HEAD and git diff HEAD):
+- tokenMatches-notes.md ....... NO difference (git diff HEAD empty).
+- tokenMatches-conclusion.md .. NO difference.
+- tokenMatches-reasoning.md ... DIFFERS. Top line changed "Saved (local time):" -> "Timestamp:", the
+  line "return timingSafeEqual(...)" indented, one blank line removed and one added, final paragraphs
+  indented.
+- tokenMatches.md ............. DIFFERS. Only the bullet marker "*" changed to "-" on 10 lines; no
+  wording change.
+On-disk byte note (CONFIRMED): notes.md shows 2412 bytes on disk but the committed blob is 2368; the 44
+extra bytes are the CRLF line endings of 44 lines (git stores LF), so the CONTENT is identical.
+
+### Entry 23 - the "Saved (local time)" -> "Timestamp:" rewrite: which file, and cause
+Evidence (CONFIRMED):
+- The rewrite is in tokenMatches-REASONING.md, NOT notes.md. The notes.md first line is still
+  "Saved (local time): 2026-10-16 21:34:57 +01:00" and no "Timestamp" text exists anywhere in notes.md.
+- git log --all -S"Timestamp:" -- tokenMatches-notes.md returns nothing, so notes.md was never rewritten
+  with that line in any commit.
+- The change sits only in the working tree (uncommitted); HEAD still holds "Saved (local time):".
+Cause of the reasoning.md and tokenMatches.md working-tree changes: UNKNOWN. The change is proven, the
+author is not. INFERRED only: both files were touched around 01:33 (mtimes 1:33:50 and 1:33:54), which
+looks like an editor auto-reformat. Not provable, so: cause unknown.
+
+### Entry 24 - which files the tutor wrote
+Statement (CONFIRMED by prior commands): this run the tutor wrote ONLY this log. In earlier runs the
+tutor wrote ONLY part-a\own-functions\tokenMatches.md, part-a\own-functions\tokenMatches-conclusion.md
+and this log. The tutor has never written tokenMatches-notes.md or tokenMatches-reasoning.md, and will
+not touch those four files again.
+
+### Entry 25 - STEP 3 gate check
+Evidence (CONFIRMED): tokenMatches-conclusion-v2.md does NOT exist; tokenMatches-v2.md does NOT exist.
+Per the owner's STEP 3 rule, the 7 hint questions were HELD and this step stopped.
+
+### Checklist after this entry
+- 5d tokenMatches v1 draft ............. Verified (filed + committed, 9ac8855)
+- 5e tokenMatches hint review .......... In progress (STEP 2 question asked, answer awaited)
+- STEP 0 integrity report .............. Verified (entries 21-24)
+- tokenMatches-reasoning.md ............ Needs correction (uncommitted working-tree change; owner decides)
+- tokenMatches.md ...................... Needs correction (uncommitted "*" -> "-"; HEAD is fine)
+- STEP 3 (7 hint questions on v1) ...... Not started yet / blocked: tokenMatches-conclusion-v2.md absent
+- Block on: owner must save tokenMatches-conclusion-v2.md and say "v2 conclusion saved".
+- Nice to have: none this run.
+
+--------------------------------------------------------------------------------
+
+## 2026-10-17 02:17 +01:00 - Stage A1 STEP 3: seven hint questions (owner said v2 conclusion saved)
+
+### Entry 26 - gate satisfied, hints given
+Evidence (CONFIRMED by real listing):
+- part-a\own-functions\tokenMatches-conclusion-v2.md ... 685 bytes, 10/17/2026 2:16:59 AM (exists).
+- HEAD is now a42efb7 "Add tokenMatches conclusion v2" (parent db94fda). Owner committed it.
+- Also present: tokenMatches.md 1569 bytes @ 2:06:25 AM; tokenMatches-reasoning.md 1030 bytes @
+  2:06:25 AM. git diff vs HEAD shows only PROGRESS-LOG.md modified, so the earlier working-tree edits
+  are now in a commit (no longer pending).
+Action: gave the 7 hint questions as questions only, in the owner's order, with no corrected text. The
+tutor did not write, complete or correct any pseudocode or conclusion. Reminders repeated (write
+tokenMatches-v2.md yourself and commit; ask a partner for the A3 planted bug; open the folder in
+Antigravity; next A1 slots sweepStuck and classifySmtpError).
+Files touched by the tutor this run: this log only. No git writes.
+
+### Checklist after this entry
+- 5d tokenMatches v1 draft ............. Verified
+- 5e tokenMatches hint review .......... In progress (7 questions given; owner answer awaited)
+- STEP 3 ............................... Verified (gate satisfied, questions issued)
+- Next block on: owner writes tokenMatches-v2.md and pastes v2 for hint review (STEP 4).
+- Needs correction: none outstanding (reasoning.md/tokenMatches.md edits are committed).
+- Nice to have: owner's STEP 2 answer still owed (what line 14 settles).
+
+--------------------------------------------------------------------------------
+
+## 2026-10-17 02:21 +01:00 - Stage A1: owner's STEP 2 answer filed in conclusion v2
+
+### Entry 27 - STEP 2 answer located (owner's own words, not corrected)
+Evidence (CONFIRMED): read part-a\own-functions\tokenMatches-conclusion-v2.md, 685 bytes,
+10/17/2026 2:16:59 AM, 4 lines. Lines 3-4 are the owner's own answer to the STEP 2 question: it states
+that line 14's ".digest()" has no encoding argument, that digest() without an output encoding returns a
+Buffer (not a hex string), and that this settles the "assumption to verify". The tutor did NOT change,
+correct or annotate this text; it is the owner's own work. STEP 2 answer: now PROVIDED by owner.
+Note (INFERRED): the answer stands on line 14 being the return of the helper; the owner's own wording.
+
+### Entry 28 - next gate
+Status: tokenMatches-v2.md does NOT exist yet (CONFIRMED by Test-Path). STEP 4 (hint review of the v2
+draft) is blocked until the owner writes it and pastes it.
+git status: only " M PROGRESS-LOG.md" (this log). No git writes by the tutor.
+
+### Checklist after this entry
+- STEP 2 (what line 14 settles) ........ Verified (owner answer in conclusion-v2.md)
+- STEP 3 (7 hint questions) ............ Verified (given)
+- 5e tokenMatches hint review .......... In progress (questions with owner; v2 draft pending)
+- 5f / STEP 4 .......................... Not started / blocked: tokenMatches-v2.md not written yet
+- Block on: owner writes and pastes tokenMatches-v2.md.
+- Nice to have: none this run.
