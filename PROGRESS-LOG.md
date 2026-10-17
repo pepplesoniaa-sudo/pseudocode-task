@@ -141,3 +141,132 @@ Evidence (CONFIRMED by read-only git):
 - No git push was run. "git add ." was NOT used.
 Note: this Entry 11 was appended AFTER the commit, so PROGRESS-LOG.md now carries one uncommitted
 change (the entry you are reading). Expected; it will go into the next housekeeping commit.
+
+--------------------------------------------------------------------------------
+
+## 2026-10-17 01:12 +01:00 - Stage A1 STEP 1 (partial): file conclusion and v1 draft
+
+### Entry 12 - owner's tokenMatches conclusion filed (copy only)
+Done: created the new file below with the owner's pasted conclusion, verbatim, first line as the
+requested timestamp. No wording was changed by the tutor. No existing file was edited or deleted.
+Files (CONFIRMED by listing):
+- part-a\own-functions\tokenMatches-conclusion.md ... 2641 bytes, 10/17/2026 1:10:57 AM (NEW)
+- first line: "Timestamp: 2026-10-17 00:43:31 WAT (Africa/Lagos)"
+
+### Entry 13 - owner's tokenMatches v1 draft NOT received
+Status: Not completed yet. The STEP 1 message contained the placeholder "[PASTE MY V1 PSEUDOCODE HERE]"
+but no v1 text. The existing template part-a\own-functions\tokenMatches.md (822 bytes,
+10/15/2026 10:46:20 PM) is UNCHANGED. Per the no-invention rule the tutor did not write or guess it.
+Blocker: owner must paste the v1 pseudocode. Because the v1 file is missing, the requested
+"git add part-a" + "git commit -m ..." for STEP 1 was DELIBERATELY NOT run yet.
+
+### Entry 14 - no other project touched
+Done: only C:\dev\pseudocode-task was written. The Background jobs project (read-only, src only) was
+not edited. No app, worker, database or test was run. test\api.test.ts was not opened. No secrets
+printed. No git push.
+
+### Checklist after this entry
+- 5c tokenMatches conclusion ............ Verified  (new file, 2641 bytes)
+- 5d tokenMatches v1 draft .............. Not started / blocked (v1 text not pasted)
+- STEP 1 git commit .................... Not completed yet (waiting on v1)
+- STEP 2 (confirm helper) .............. Not started yet this run
+- STEP 3 (hints on v1) ................. Not started yet this run
+
+--------------------------------------------------------------------------------
+
+## 2026-10-17 01:25 +01:00 - Stage A1 STEP 1 completed: v1 draft filed, committed
+
+### Entry 15 - owner's v1 pseudocode saved over the template (copy only)
+Done: replaced part-a\own-functions\tokenMatches.md with the owner's pasted v1 text, verbatim (the old
+headings-only template is gone). The tutor did not write, complete or correct any pseudocode; the text
+is the owner's own.
+Files (CONFIRMED by listing after the write):
+- part-a\own-functions\tokenMatches.md ............ 1541 bytes, 10/17/2026 1:25:14 AM (was 822 bytes)
+- part-a\own-functions\tokenMatches-conclusion.md . 2641 bytes, 10/17/2026 1:10:57 AM
+Note (honesty): the very first write attempt to tokenMatches.md was malformed (a duplicated FAILS WHEN
+block). It was immediately rewritten from the owner's pasted text. The logged size/time above is the
+corrected final file. No source file and no existing user file other than the specified template was
+touched.
+
+### Entry 16 - git add + commit (as instructed)
+Commands run (exactly as instructed, no "git add ." and no push):
+- git add part-a
+- git commit -m "Add tokenMatches conclusion and v1 draft"
+Evidence (CONFIRMED by git show --stat HEAD):
+- Commit 9ac8855, 2 files changed, 50 insertions(+), 26 deletions(-).
+- new file: part-a/own-functions/tokenMatches-conclusion.md
+- modified: part-a/own-functions/tokenMatches.md
+- Author/email: Sonia Pepple <pepplesoniaa@gmail.com> (same as prior commits).
+- Git note: "LF will be replaced by CRLF" warnings only; no error.
+- git status after commit: only " M PROGRESS-LOG.md" (this entry, expected).
+
+### Checklist after this entry
+- 5d tokenMatches v1 draft .............. Verified  (filed + committed)
+- STEP 1 ............................... Verified  (conclusion + v1 both filed, commit 9ac8855)
+- STEP 2 (confirm helper, line 14) ..... Not started yet this run
+- STEP 3 (hints on v1) ................. Not started yet this run
+
+### Next
+STEP 2 only: print src\adminRoutes.ts line 14 exactly, state only whether it passes an encoding to
+digest, then ask the owner a question. Then STOP.
+
+--------------------------------------------------------------------------------
+
+## 2026-10-17 01:30 +01:00 - Stage A1 STEP 2: confirm the helper (read only)
+
+### Entry 17 - src\adminRoutes.ts line 14 printed
+Done: read the Background jobs project read-only and printed line 14 exactly, with line number, and
+added only one statement: whether it passes an encoding to digest. Answer: NO encoding is passed
+(the brackets in ".digest()" are empty). Nothing else about the function was described. No test file
+was opened; no value or credential was printed.
+Evidence (CONFIRMED): tool output of src\adminRoutes.ts line 14 verbatim:
+  const sha256 = (value: string) => createHash("sha256").update(value).digest();
+Asked the owner to write, in their own words, what this settles about their "assumption to verify".
+The tutor did NOT say what it settles (hint-only rule).
+
+### Checklist after this entry
+- 5e tokenMatches hint review .......... In progress (STEP 2 question asked)
+- STEP 2 ............................... Verified (line 14 printed, encoding question stated)
+- STEP 3 (hints on v1) ................. Not started yet
+
+--------------------------------------------------------------------------------
+
+## 2026-10-17 01:34 +01:00 - Stage A1 STEP 2 (this run): state check + helper line 14
+
+Permissions for this run: read-only on the Background jobs project src; write ONLY to append to this
+PROGRESS-LOG.md; NO git writes.
+
+### Entry 18 - current state verified with a real listing
+Done: listed the two files and checked tokenMatches.md for a stray square bracket.
+Files (CONFIRMED by listing):
+- part-a\own-functions\tokenMatches.md ............ 1541 bytes, 10/17/2026 1:33:54 AM
+- part-a\own-functions\tokenMatches-conclusion.md . 2641 bytes, 10/17/2026 1:10:57 AM
+Bracket check (CONFIRMED two ways):
+- Working file: 28 lines; first line "`tokenMatches` — v1 pseudocode"; last line ends "...`tokenMatches`
+  alone."; a scan found NO "[" or "]" on any line.
+- Committed content at commit 9ac8855: 28 lines; same first and last lines; NO bracket on any line.
+- Answer to the owner's question: NO stray square bracket, on no line.
+Note (honesty): tokenMatches.md mtime is now 1:33:54 AM (the commit was 1:25:23 AM), so the file was
+touched after the commit - but its content still matches the committed version (28 lines, same first
+and last lines). INFERRED: an editor touched it without changing the text. Not edited by the tutor.
+
+### Entry 19 - src\adminRoutes.ts line 14 printed (read only)
+Evidence (CONFIRMED): src\adminRoutes.ts line 14 verbatim:
+  const sha256 = (value: string) => createHash("sha256").update(value).digest();
+Statement made (only one): line 14 passes NO encoding to digest (".digest()" brackets are empty).
+Then asked the owner to write, in their own words, what this settles about the "assumption to verify"
+at the bottom of their v1. The tutor did NOT say what it settles. No test file was opened. No value or
+credential printed.
+
+### Entry 20 - STEP 3 held (gate not met)
+Status: Not started yet / blocked. The owner's STEP 3 text says to give the 7 hint questions "after I
+say my v2 conclusion is saved". That has not happened yet, so no hint questions were given. Awaiting
+the owner's STEP 2 answer and their v2-conclusion message.
+
+### Checklist after this entry
+- 5d tokenMatches v1 draft ............. Verified (filed + committed, 9ac8855)
+- 5e tokenMatches hint review .......... In progress (STEP 2 question asked, answer awaited)
+- STEP 2 ............................... Verified (line 14 printed, no-encoding stated)
+- STEP 3 (7 hint questions on v1) ...... Not started yet / blocked on owner's v2-conclusion message
+- 5f tokenMatches 3 traces + real run .. Not started
+- Nice to have: nothing new this run. Block on: owner's v2 conclusion + STEP 2 answer.
