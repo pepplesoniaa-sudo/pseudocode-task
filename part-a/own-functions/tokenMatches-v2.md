@@ -2,6 +2,8 @@ Timestamp:2026-10-17 19:08:37 +01:00
 
 Edited: 2026-10-18 10:17:52 +01:00
 
+Edited:2026-10-18 11:01:05 +01:00
+
 
 
 FUNCTION tokenMatches
@@ -43,8 +45,8 @@ STEPS:
 
 1. Receive given and expected.
 2. Early exit: Check whether given is a string. If it is not, return false and stop the function.
-3. Hash the supplied value: Use sha256 to turn given into a digest value.
-4. Hash the expected value: Use sha256 to turn expected into a digest value.
+3. Turn given into a fingerprint. The result is a buffer of exactly 32 bytes, and the size does not depend on how long the text is..
+4. Turn expected into a fingerprint. The result is a buffer of exactly 32 bytes, and the size does not depend on how long the text is..
 5. Compare the digests: Pass both digest values to timingSafeEqual. It compares their underlying bytes and returns a boolean; it requires supported byte-based inputs of equal length.
 6. Return the boolean produced by the comparison.
 
@@ -52,7 +54,7 @@ STEPS:
 
 CONFIRMED FROM CODE:
 
-* Line 14 ends with digest() with empty brackets, so no encoding is passed.
+* Line 14 ends with .digest() with empty brackets, so no encoding is passed.
 * According to my digest() notes, that returns a Buffer (raw bytes), not a hex string.
 * A SHA-256 result is always 32 bytes, whatever length of text went in.
 
