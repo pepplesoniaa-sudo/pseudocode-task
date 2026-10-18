@@ -383,3 +383,255 @@ git status: only " M PROGRESS-LOG.md" (this log). No git writes by the tutor.
 - 5f / STEP 4 .......................... Not started / blocked: tokenMatches-v2.md not written yet
 - Block on: owner writes and pastes tokenMatches-v2.md.
 - Nice to have: none this run.
+
+--------------------------------------------------------------------------------
+
+## 2026-10-17 20:10 +01:00 - Stage A1 STEP 4: hint-only review of owner's v2 sections
+
+Permissions this run: read-only on Background jobs project src and on C:\dev\pseudocode-task;
+write ONLY to append to this log; NO git writes.
+
+### Entry 29 - STEP A: file read and reported
+Evidence (CONFIRMED by real directory listing and file read):
+- part-a\own-functions\tokenMatches-v2.md .... 853 bytes, 10/17/2026 7:59:26 PM, 46 lines (NEW, owner-written).
+- Headings with text: INPUTS (2 bullets), OUTPUT (3 bullets), CONFIRMED FROM CODE (3 bullets).
+- Headings EMPTY: STEPS, FAILS WHEN (no returns, no throws), SIDE EFFECTS.
+- Note on the line 30 comment: Not present in the file.
+- Formatting observation (CONFIRMED by read): 8 bullet lines start with an escaped hyphen "\-", and the
+  timestamp line lacks a space after the colon. Reported to owner as a question, not changed.
+
+### Entry 30 - STEP B: hint review, questions only
+Done: reviewed INPUTS, CONFIRMED FROM CODE, OUTPUT, STEPS against the standard. Questions only; no text
+written, completed or corrected; no file other than this log touched.
+- INPUTS: stated correct to owner (given = any value, expected = text, matches v1).
+- CONFIRMED FROM CODE: one weak-spot question - is the "32 bytes" bullet confirmed from the code or
+  from the owner's notes, and which section should carry it?
+- OUTPUT: stated correct so far (3 lines, own conditions, no overlap); asked owner to count false
+  situations (2) and true situations (1) and check against v1's Returns block.
+- STEPS (empty): 4 guiding questions - count the actions; name the early exit with IF/OTHERWISE/END IF;
+  split hashing into two steps naming type and size; name the comparison step, what it needs, and which
+  earlier step guarantees that need.
+- Extra question: "\-" escapes on 8 lines - editor auto-format? linked to Format On Save reminder.
+
+### Entry 31 - STEP C: guiding questions for unwritten sections
+Questions only, no answers given:
+- FAILS WHEN returns: empty string vs very long string - does hashing still work, do digests keep equal
+  size, which cases return vs throw?
+- FAILS WHEN throws: for each v1 cause, does it survive contact with line 14 (fixed algorithm string;
+  already-finalised hash; expected's type unchecked by line 3)? Is "cannot tell from this file" allowed?
+- SIDE EFFECTS: definite one-sentence statement, no hedges.
+- Line 30 comment: classify "length does not leak" and "constant time" separately as accurate, partly
+  accurate or overstated, reasoned from the 32-byte finding.
+
+### Entry 32 - STEP D reminders and boundaries
+Reminders given (no behaviour described): owner commits v2 themselves (git add/commit/push, not by
+tutor); turn off Format On Save; ask partner for A3 planted bug; open folder in Antigravity; next A1
+slots sweepStuck and classifySmtpError.
+Tutor this run: read only, wrote ONLY this log. No git writes. test\api.test.ts NOT opened. No token or
+credential printed.
+
+### Checklist after this entry
+- 5e tokenMatches hint review .......... Verified  (STEP 4 hint review delivered on written sections)
+- STEP 4 (hint review of v2) ........... Verified  (INPUTS/CONFIRMED/OUTPUT reviewed; STEPS/FAILS/SIDE
+  EFFECTS questions issued for owner to write)
+- tokenMatches-v2.md sections written .. In progress (INPUTS, OUTPUT, CONFIRMED FROM CODE done; STEPS,
+  FAILS WHEN, SIDE EFFECTS, line 30 note empty)
+- 5f tokenMatches 3 traces + real run .. Not started
+- 5g other two own functions ............ Not started
+- Block on: owner writes STEPS, FAILS WHEN (returns + throws), SIDE EFFECTS and the line 30 note in
+  tokenMatches-v2.md, answers the hint questions, then commits v2.
+- Nice to have: owner turns off Format On Save (the "\-" escapes) and answers the false/true count
+  question.
+
+--------------------------------------------------------------------------------
+
+## 2026-10-17 20:35 +01:00 - Stage A1 STEP 5, Section 1: OUTPUT check questions
+
+Permissions this run: read-only on Background jobs src and C:\dev\pseudocode-task; write ONLY to
+append to this log; NO git writes.
+
+### Entry 33 - file state verified, Section 1 questions issued
+Evidence (CONFIRMED by real listing and file read):
+- part-a\own-functions\tokenMatches-v2.md .... 853 bytes, 10/17/2026 7:59:26 PM, 46 lines (unchanged
+  since STEP 4; owner has not edited it yet).
+- Headings with text: INPUTS, OUTPUT, CONFIRMED FROM CODE. Empty: SIDE EFFECTS, FAILS WHEN, STEPS.
+- Backslash-hyphen lines reported by line number only: 11, 13, 19, 21, 23, 41, 43, 45.
+Action: asked the owner 4 questions on the OUTPUT section (count of false/true; which before vs after
+  hashing; overlap check; count vs v1 Returns block). Questions only; no text written or corrected.
+Tutor this run: read only, wrote ONLY this log. No git writes.
+
+### Checklist after this entry
+- STEP 5 Section 1 (OUTPUT check) ....... In progress (questions asked, answer awaited)
+- Sections 2-7 .......................... Not started
+- tokenMatches-v2.md ..................... In progress (3 of 7 sections have text)
+- Block on: owner answers the 4 OUTPUT questions.
+- Nice to have: none this run.
+
+--------------------------------------------------------------------------------
+
+## 2026-10-17 20:50 +01:00 - Stage A1 STEP 5, Section 1 (re-run): OUTPUT questions re-issued
+
+Permissions this run: read-only on Background jobs src and C:\dev\pseudocode-task; write ONLY to
+append to this log; NO git writes.
+
+### Entry 34 - file unchanged, Section 1 still in progress
+Evidence (CONFIRMED by real listing and file read):
+- part-a\own-functions\tokenMatches-v2.md .... 853 bytes, 10/17/2026 7:59:26 PM, 46 lines (unchanged
+  since last run; owner has not edited it).
+- Headings with text: INPUTS, OUTPUT, CONFIRMED FROM CODE. Empty: SIDE EFFECTS, FAILS WHEN, STEPS.
+- Backslash-hyphen lines: 11, 13, 19, 21, 23, 41, 43, 45 (report only, not edited).
+Observation: the owner re-ran STEP 5 without answering the 4 OUTPUT questions from entry 33, so
+  Section 1 remains In progress. The same 4 questions were re-issued. No verdict given.
+Tutor this run: read only, wrote ONLY this log. No git writes.
+
+### Checklist after this entry
+- STEP 5 Section 1 (OUTPUT check) ....... In progress (questions re-issued; answer still awaited)
+- Sections 2-7 .......................... Not started
+- tokenMatches-v2.md ..................... In progress (3 of 7 sections have text)
+- Block on: owner answers the 4 OUTPUT questions (false count, true count, before/after hashing,
+  overlap check, v1 Returns count match).
+- Nice to have: none this run.
+
+--------------------------------------------------------------------------------
+
+## 2026-10-17 21:05 +01:00 - Stage A1 STEP 5, Section 1: OUTPUT check verdict
+
+Permissions this run: read-only on Background jobs src and C:\dev\pseudocode-task; write ONLY to
+append to this log; NO git writes.
+
+### Entry 35 - owner answered the 4 OUTPUT questions
+Owner answers (verbatim summary, owner's own words):
+1. Two situations return false, one returns true; three possible return situations total.
+2. The first false happens before hashing (given not a string); the other two happen after hashing
+   and comparing (false on no match, true on match).
+3. No overlap; each line describes a separate situation.
+4. v1 Returns block has 2 bullets but the second combines match + no-match, so v1 describes 3
+   situations in total, matching v2's 3 OUTPUT lines.
+
+### Entry 36 - Section 1 verdict (only the verdict, no corrections)
+Verdict: the owner's OUTPUT lines (19, 21, 23) are CONSISTENT with the count the owner gave
+(2 false + 1 true = 3; one before hashing, two after; no overlap; matches the v1 count when the
+combined bullet is split). Nothing to fix in OUTPUT for consistency.
+
+### Entry 37 - owner's file-update claim vs disk state (honesty note)
+Owner stated: "The file now includes these explanations, and the FAILS WHEN -> Returns a value
+subsection also separates the three cases."
+Evidence against this (CONFIRMED by real listing and file read this run):
+- tokenMatches-v2.md is 853 bytes, 10/17/2026 7:59:26 PM - IDENTICAL size and timestamp to the
+  previous two runs. FAILS WHEN heading (line 31) is still empty; no Returns subsection exists.
+Conclusion: the file on disk does NOT yet contain the owner's claim. INFERRED possible causes:
+  the owner edited a different copy, did not save, or intended the statement as a plan. Tutor made
+  no edit (rule 4). Owner must save their own changes to part-a\own-functions\tokenMatches-v2.md.
+
+### Checklist after this entry
+- STEP 5 Section 1 (OUTPUT check) ....... Verified (answers given; OUTPUT lines consistent)
+- STEP 5 Section 2 (STEPS) .............. Not started (owner text not yet in file)
+- Sections 3-7 .......................... Not started
+- tokenMatches-v2.md ..................... Needs correction (owner's claimed FAILS WHEN text not
+  saved to disk; file unchanged at 853 bytes)
+- Block on: owner saves their v2 edits to disk (FAILS WHEN Returns subsection + any other new
+  text), then writes the six STEPS for Section 2.
+- Nice to have: turn off Format On Save; the "\-" escapes remain on lines 11,13,19,21,23,41,43,45.
+
+--------------------------------------------------------------------------------
+
+## 2026-10-17 21:20 +01:00 - Stage A1 STEP 5, Section 2 attempt: file unchanged, STOPPED
+
+Permissions this run: read-only on Background jobs src and C:\dev\pseudocode-task; write ONLY to
+append to this log; NO git writes.
+
+### Entry 38 - file state vs last known values
+Evidence (CONFIRMED by real directory listing):
+- part-a\own-functions\tokenMatches-v2.md .... 853 bytes, 10/17/2026 7:59:26 PM.
+- Last known values were 853 bytes, 10/17/2026 7:59:26 PM. IDENTICAL size and timestamp: file
+  UNCHANGED since the first Section 1 run.
+- Headings with text: INPUTS, OUTPUT, CONFIRMED FROM CODE. Empty: SIDE EFFECTS, FAILS WHEN, STEPS.
+- Backslash-hyphen lines (report only): 11, 13, 19, 21, 23, 41, 43, 45.
+Answer to owner's question: the Section 1 changes (OUTPUT edits and the FAILS WHEN returns
+  subsection) are NOT saved on disk. The FAILS WHEN heading (line 31) is still empty.
+
+### Entry 39 - STOP per owner instruction
+Per the owner's rule ("If the file is unchanged, say so and STOP"), Section 2 (STEPS) questions
+  were HELD. No questions issued this run, no review given. Tutor wrote only this log.
+
+### Checklist after this entry
+- STEP 5 Section 1 (OUTPUT check) ....... Verified (verdict given in entry 36)
+- STEP 5 Section 2 (STEPS) .............. Not started (file unchanged; questions held)
+- Sections 3-7 .......................... Not started
+- tokenMatches-v2.md ..................... Needs correction (owner's claimed Section 1 changes and
+  FAILS WHEN returns subsection still not on disk; 853 bytes, 7:59:26 PM)
+- Block on: owner SAVES their edited tokenMatches-v2.md to disk (size/timestamp must change), then
+  re-runs Section 2.
+- Nice to have: turn off Format On Save; remove stray "\" on lines 11,13,19,21,23,41,43,45 by hand.
+
+--------------------------------------------------------------------------------
+
+## 2026-10-18 08:50 +01:00 - Stage A1 STEP 5, Section 2: file updated, STEPS questions issued
+
+Permissions this run: read-only on Background jobs src and C:\dev\pseudocode-task; write ONLY to
+append to this log; NO git writes.
+
+### Entry 40 - file state vs last known values
+Evidence (CONFIRMED by real directory listing and file read):
+- part-a\own-functions\tokenMatches-v2.md .... 1084 bytes, 10/18/2026 8:37:05 AM, 56 lines.
+- Last known values were 1084 bytes, 10/18/2026 8:37:00 AM. Size and timestamp match: file is the
+  one the owner described.
+- Owner's Section 1 changes ARE saved on disk: FAILS WHEN now has a "Returns a value" heading
+  (line 33) with 3 bullets (lines 37, 39, 41) covering the early-exit false, the no-match false
+  and the match true. OUTPUT (lines 19-23) unchanged from the version verified in entry 36.
+- Headings with text: INPUTS, OUTPUT, CONFIRMED FROM CODE, FAILS WHEN (returns only). Empty:
+  SIDE EFFECTS, STEPS. FAILS WHEN has no "Throws" subsection yet.
+- Backslash-hyphen lines (report only, not edited): 11, 13, 19, 21, 23, 37, 39, 41, 51, 53, 55.
+
+### Entry 41 - Section 2: STEPS questions issued
+STEPS heading (line 45) is empty, so the 7 questions were issued (copy the six v1 steps; type and
+  size per hashing step and whether size depends on input length; what comparison needs and which
+  earlier step guarantees it; one action per step; code symbols vs plain words; early exit named
+  IF/OTHERWISE/END IF; hashing and comparing separate, return its own step). Questions only; no
+  wording written or corrected.
+Tutor this run: read only, wrote ONLY this log. No git writes.
+
+### Checklist after this entry
+- STEP 5 Section 1 (OUTPUT check) ....... Verified (verdict entry 36; saves confirmed entry 40)
+- STEP 5 Section 2 (STEPS) .............. In progress (file has returns block; STEPS still empty;
+  7 questions issued, owner text awaited)
+- FAILS WHEN throws subsection ........... Not started
+- Sections 5-7 (SIDE EFFECTS, line 30, wrap up)  Not started
+- tokenMatches-v2.md ..................... In progress (returns block saved; STEPS, throws,
+  SIDE EFFECTS, line 30 note still owed)
+- Block on: owner writes their six STEPS into tokenMatches-v2.md and pastes them for review.
+- Nice to have: turn off Format On Save; remove stray "\" on lines 11,13,19,21,23,37,39,41,51,53,55.
+
+--------------------------------------------------------------------------------
+
+## 2026-10-18 10:30 +01:00 - Stage A1 STEP 5, Items 1-8 start: file updated, Item 1 questions issued
+
+Permissions this run: read-only on Background jobs src and C:\dev\pseudocode-task; write ONLY to
+append to this log; NO git writes.
+
+### Entry 42 - file state vs last known values
+Evidence (CONFIRMED by real directory listing and file read):
+- part-a\own-functions\tokenMatches-v2.md .... 1617 bytes, 10/18/2026 10:19:53 AM, 58 lines.
+- Previous known values: 1084 bytes, 10/18/2026 8:37:05 AM. Size and timestamp CHANGED - the owner
+  has edited and saved in Notepad.
+- Changes observed (CONFIRMED by read): "Edited: 2026-10-18 10:17:52 +01:00" line added (line 3);
+  all stray backslash-hyphen escapes REMOVED (grep for lines starting with backslash: no matches);
+  six STEPS added (lines 44-49) covering receive, early exit, hash given, hash expected, compare,
+  return.
+- Headings with text: INPUTS, OUTPUT, CONFIRMED FROM CODE, FAILS WHEN (returns), STEPS. Empty:
+  SIDE EFFECTS; FAILS WHEN has no Throws subsection.
+
+### Entry 43 - Item 1 questions issued (STEPS 3 and 4)
+Asked the owner 6 questions on their hashing steps: what type comes out; how many bytes; does size
+  depend on text length; is type/size stated inside the steps in plain words; does CONFIRMED FROM
+  CODE already hold the answer; is "sha256" a code symbol vs plain words. Questions only; no
+  wording written or corrected. Awaiting owner's saved edits.
+Tutor this run: read only, wrote ONLY this log. No git writes.
+
+### Checklist after this entry
+- Item 1 (STEPS 3 and 4 hashing) ........ In progress (questions asked; owner editing)
+- Items 2-8 .............................. Not started
+- tokenMatches-v2.md ...................... In progress (STEPS drafted; hashing steps need type/
+  size; SIDE EFFECTS empty; Throws empty; line 30 note not started)
+- Block on: owner saves improved steps 3 and 4, then says "saved".
+- Nice to have: none this run.
