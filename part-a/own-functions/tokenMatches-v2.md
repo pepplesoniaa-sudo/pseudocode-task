@@ -10,6 +10,8 @@ Edited: 2026-10-18 17:39:28 +01:00
 
 Edited: 2026-10-18 17:51:17 +01:00
 
+Edited: 2026-10-18 20:05:12 +01:00
+
 
 
 FUNCTION tokenMatches
@@ -48,6 +50,12 @@ Returns a value
 Strange inputs that still return (no error)
 - given is empty text: still a string, so it passes step 2; the fingerprint is 32 bytes; returns true only if expected is also empty, otherwise false.
 - given and expected have very different lengths: both fingerprints are 32 bytes, so the comparison gets equal sizes; returns false unless the fingerprints match.
+
+Throws
+
+- The step that makes a fingerprint of `expected` can throw if `expected` is a non-string value that the hash update cannot process, because there is no runtime check for `expected`; step 2 checks only `given`.
+- These cannot happen in this code: an unsupported algorithm (because the helper fixes the name to `sha256`, which Node supports), an already-finished hash (because each helper call creates a fresh hash and finalises it only once), non-text `given` reaching hashing (because step 2 returns `false` first), or a fingerprint length mismatch (because both SHA-256 fingerprints are exactly 32 bytes).
+- There is no error handling in lines 31 to 34, so any error that does occur goes to the code that called the function.
 
 
 STEPS:
