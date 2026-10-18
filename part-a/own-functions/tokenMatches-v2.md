@@ -41,13 +41,13 @@ The function reads `given` and `expected`, hashes their text, compares the two d
 FAILS WHEN:
 
 Returns a value
+- Returns false before hashing if given is not a string.
+- Returns false after hashing if the two fingerprints are different.
+- Returns true after hashing if the two fingerprints match.
 
-
-
-* Returns `false` before hashing if `given` is not a string.
-* Returns `false` after hashing if the two digest values are different.
-* Returns `true` after hashing if the two digest values match.
-
+Strange inputs that still return (no error)
+- given is empty text: still a string, so it passes step 2; the fingerprint is 32 bytes; returns true only if expected is also empty, otherwise false.
+- given and expected have very different lengths: both fingerprints are 32 bytes, so the comparison gets equal sizes; returns false unless the fingerprints match.
 
 
 STEPS:
