@@ -8,6 +8,8 @@ Edited: 2026-10-18 16:58:49 +01:00
 
 Edited: 2026-10-18 17:39:28 +01:00
 
+Edited: 2026-10-18 17:51:17 +01:00
+
 
 
 FUNCTION tokenMatches
@@ -30,6 +32,9 @@ OUTPUT:
 
 
 SIDE EFFECTS:
+
+
+The function reads `given` and `expected`, hashes their text, compares the two digests, and returns `true` or `false`. It does not modify either input or perform external actions such as logging, writing data, or making network requests.
 
 
 
