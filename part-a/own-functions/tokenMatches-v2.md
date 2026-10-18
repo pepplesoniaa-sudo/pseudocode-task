@@ -80,3 +80,9 @@ CONFIRMED FROM CODE:
 * According to my digest() notes, that returns a Buffer (raw bytes), not a hex string.
 * A SHA-256 result is always 32 bytes, whatever length of text went in.
 
+LINE 30 COMMENT CHECK
+
+* Claim A, “the length of the token does not leak”: PARTLY ACCURATE. Both SHA-256 fingerprints are exactly 32 bytes, so their sizes do not reveal the original text lengths. However, the Node.js documentation does not confirm that hashing short and long text takes the same amount of time. Any possible timing difference from hashing is marked as an inference.
+
+* Claim B, “the compare takes constant time”: ACCURATE for the comparison step only. Node.js documents `timingSafeEqual` as using a constant-time algorithm, but explicitly warns that this does not guarantee the surrounding code is timing-safe. The early exit in step 2 also means the whole function is not guaranteed to take constant time.
+
