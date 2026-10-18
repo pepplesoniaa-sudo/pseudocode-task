@@ -2,7 +2,9 @@ Timestamp:2026-10-17 19:08:37 +01:00
 
 Edited: 2026-10-18 10:17:52 +01:00
 
-Edited:2026-10-18 11:01:05 +01:00
+Edited: 2026-10-18 11:01:05 +01:00
+
+Edited: 2026-10-18 16:58:49 +01:00
 
 
 
@@ -47,7 +49,7 @@ STEPS:
 2. Early exit: Check whether given is a string. If it is not, return false and stop the function.
 3. Turn given into a fingerprint. The result is a buffer of exactly 32 bytes, and the size does not depend on how long the text is..
 4. Turn expected into a fingerprint. The result is a buffer of exactly 32 bytes, and the size does not depend on how long the text is..
-5. Compare the digests: Pass both digest values to timingSafeEqual. It compares their underlying bytes and returns a boolean; it requires supported byte-based inputs of equal length.
+5. Compare the fingerprints: Compare the two fingerprints from steps 3 and 4. They are raw byte blocks of equal length because steps 3 and 4 each produce exactly 32 bytes. The comparison returns true if all bytes match and false otherwise.
 6. Return the boolean produced by the comparison.
 
 
